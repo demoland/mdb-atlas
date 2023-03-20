@@ -19,4 +19,14 @@ resource "mongodbatlas_cluster" "mdb_hashi" {
   provider_name               = "AWS"
   disk_size_gb                = 100
   provider_instance_size_name =  var.provider_instance_size_name
+
+  labels {
+        key   = "Author"
+        value = "Andrew Lavoie"
+  }
+  labels {
+        key   = "Built-with"
+        value = "Terraform"
+  }
+
 }
