@@ -1,4 +1,4 @@
-resource "mongodbatlas_cluster" "mdb-hashi" {
+resource "mongodbatlas_cluster" "mdb_hashi" {
   project_id   = var.project_id
   name         = "mdb-hashi"
   cluster_type = "REPLICASET"
@@ -13,7 +13,7 @@ resource "mongodbatlas_cluster" "mdb-hashi" {
   }
   cloud_backup = true
   auto_scaling_disk_gb_enabled = true
-  mongo_db_major_version       = "4.2"
+  mongo_db_major_version       = var.mongo_db_major_version
 
   # Provider Settings "block"
   provider_name               = "AWS"

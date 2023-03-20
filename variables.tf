@@ -19,3 +19,9 @@ variable "provider_instance_size_name" {
   default     = "M30"
 }
  
+variable "mongo_db_major_version" {
+  description = "The major version of MongoDB to deploy. Defaults to 4.2"
+  type        = string
+  default     = "5.0"
+}
+  
