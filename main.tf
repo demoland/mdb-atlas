@@ -22,7 +22,7 @@ resource "mongodbatlas_cluster" "mdb_hashi" {
 
   labels {
         key   = "Author"
-        value = "Andrew Lavoie"
+        value = "Dan Fedick"
   }
   labels {
         key   = "Built-with"
